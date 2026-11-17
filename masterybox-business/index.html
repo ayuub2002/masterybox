@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masterybox | Mystery Purchase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="brand"><span class="brand-icon">M</span><span>MASTERYBOX</span></header>
+    <section class="hero">
+      <p class="eyebrow">A SURPRISE IS WAITING FOR YOU</p>
+      <h1>Open your<br><span>mystery box.</span></h1>
+      <p class="intro">Discover your mystery letter and find out which surprise product is yours.</p>
+      <div class="box-stage" id="boxStage">
+        <div class="glow"></div>
+        <div class="gift" aria-label="Mystery gift box">
+          <div class="gift-lid"></div><div class="gift-body"></div>
+          <div class="gift-ribbon"></div><div class="gift-bow"></div>
+        </div>
+      </div>
+      <button id="openBtn" class="primary">OPEN MY MYSTERY BOX <span>↗</span></button>
+      <p class="small-note">Your product and its price will be revealed after opening.</p>
+    </section>
+
+    <section id="result" class="result hidden" aria-live="polite">
+      <p class="eyebrow">YOUR MYSTERY LETTER</p>
+      <div class="letter-card"><span id="letter">A</span></div>
+      <h2 id="resultTitle">Your surprise is revealed!</h2>
+      <p class="result-copy">Your letter matches this product:</p>
+      <div class="product-card">
+        <div class="product-icon" id="productIcon">📓</div>
+        <div class="product-info">
+          <span class="product-label">YOUR MYSTERY PRODUCT</span>
+          <strong id="productName">Notebook</strong>
+          <span id="productDescription">A useful surprise for you.</span>
+        </div>
+        <div class="price" id="productPrice">100 EGP</div>
+      </div>
+      <p class="pay-note">Please show this result to the shop staff and pay <strong id="payAmount">100 EGP</strong> to receive your product.</p>
+      <p class="small-note">One mystery opening is allowed per browser.</p>
+    </section>
+
+    <footer>© <span id="year"></span> Masterybox · Every box holds a surprise.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--bg:#0b1020;--panel:#151d32;--gold:#f3c76b;--muted:#aab4c7;--white:#fff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 25%,#1c2946 0%,var(--bg) 65%);color:var(--white);font-family:'DM Sans',sans-serif}
+.page{width:min(100% - 32px,620px);margin:auto;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;margin:28px 0 12px;font-size:13px;letter-spacing:3px;font-weight:700}
+.brand-icon{width:30px;height:30px;border:1px solid var(--gold);border-radius:9px;display:grid;place-items:center;color:var(--gold);font-family:Georgia;font-size:19px}
+.hero{text-align:center;width:100%;padding:32px 0 10px}.eyebrow{color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:700}
+h1{font-family:'Playfair Display',serif;font-size:clamp(42px,9vw,66px);line-height:1.04;margin:14px 0}
+h1 span{color:var(--gold)}.intro{color:var(--muted);max-width:390px;margin:0 auto;line-height:1.7;font-size:14px}
+.box-stage{height:245px;display:grid;place-items:center;position:relative}.glow{position:absolute;width:210px;height:150px;border-radius:50%;background:#f3c76b22;filter:blur(38px)}
+.gift{width:164px;height:132px;position:relative;z-index:1;filter:drop-shadow(0 20px 18px #0008);transition:transform .7s}
+.gift-body{position:absolute;bottom:0;left:5px;width:154px;height:102px;background:linear-gradient(130deg,#e3a83e,#9b641d);border:2px solid #f7d88d;border-radius:5px 5px 12px 12px}
+.gift-lid{position:absolute;z-index:2;top:17px;left:0;width:164px;height:32px;background:linear-gradient(100deg,#f7d88d,#bd812b);border:2px solid #ffe7aa;border-radius:5px}
+.gift-ribbon{position:absolute;z-index:3;top:17px;left:70px;width:24px;height:115px;background:#fff0c5}
+.gift-bow{position:absolute;z-index:4;top:0;left:60px;width:45px;height:25px;border:8px solid var(--gold);border-radius:50% 50% 0 50%;transform:rotate(15deg)}
+.box-stage.opening .gift{transform:translateY(-18px) rotate(-7deg) scale(1.08)}
+.primary{border:0;border-radius:999px;padding:17px 27px;background:var(--gold);color:#171321;font-weight:700;letter-spacing:1px;cursor:pointer;box-shadow:0 8px 30px #f3c76b22}
+.primary span{margin-left:14px;font-size:18px}.primary:disabled{opacity:.6;cursor:wait}
+.small-note{font-size:11px;color:#8995aa;margin-top:17px}
+.result{width:100%;text-align:center;margin:25px 0 35px;animation:appear .6s ease}
+.hidden{display:none}.letter-card{width:110px;height:125px;margin:18px auto;background:linear-gradient(145deg,#fff7e4,#e8c77e);border-radius:13px;display:grid;place-items:center;box-shadow:0 12px 35px #0006;transform:rotate(-3deg)}
+.letter-card span{font-family:'Playfair Display',serif;font-size:76px;color:#17213a}
+h2{font-family:'Playfair Display',serif;font-size:29px;margin:18px 0 5px}.result-copy{color:var(--muted);font-size:13px}
+.product-card{display:flex;align-items:center;gap:13px;text-align:left;background:var(--panel);border:1px solid #ffffff18;border-radius:16px;padding:17px;margin:22px 0}
+.product-icon{font-size:36px;width:52px;height:52px;display:grid;place-items:center;background:#ffffff0c;border-radius:12px}
+.product-info{display:flex;flex-direction:column;gap:4px;flex:1}.product-label{font-size:9px;letter-spacing:1.5px;color:var(--gold)}.product-info strong{font-size:17px}.product-info span:last-child{font-size:11px;color:var(--muted)}
+.price{font-weight:700;color:var(--gold);white-space:nowrap}.pay-note{background:#f3c76b12;border:1px solid #f3c76b44;border-radius:12px;padding:15px;font-size:13px;line-height:1.6;color:#e8dfcb}
+footer{margin-top:auto;padding:28px 0;color:#77839a;font-size:10px}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:420px){.product-card{gap:9px;padding:12px}.product-icon{width:42px;height:42px;font-size:28px}.product-info strong{font-size:14px}.price{font-size:13px}}

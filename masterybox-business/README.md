@@ -22,7 +22,6 @@ A simple HTML, CSS and Vanilla JavaScript prototype for a mystery-product busine
 4. Open `admin.html` to manage the sample products.
 5. Open `qr-poster.html`, paste the public URL of your deployed customer page, and generate the QR.
 
-Demo admin password: `masterybox123`.
 
 ## Important prototype limitations
 This is a frontend-only demonstration:

@@ -9,7 +9,7 @@ const KEY="masterybox_products_v2";
 let products=load();
 function load(){try{const p=JSON.parse(localStorage.getItem(KEY));return Array.isArray(p)&&p.length?p:DEFAULTS.map(x=>({...x}))}catch{return DEFAULTS.map(x=>({...x}))}}
 const login=document.getElementById("login"),dashboard=document.getElementById("dashboard");
-document.getElementById("loginBtn").onclick=()=>{if(document.getElementById("password").value==="farwa123"){login.classList.add("hidden");dashboard.classList.remove("hidden");render()}else alert("Incorrect password")};
+document.getElementById("loginBtn").onclick=()=>{if(document.getElementById("password").value==="masterybox123"){login.classList.add("hidden");dashboard.classList.remove("hidden");render()}else alert("Incorrect password")};
 function render(){
  const wrap=document.getElementById("products");wrap.innerHTML="";
  products.forEach((p,i)=>{

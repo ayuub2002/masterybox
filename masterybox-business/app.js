@@ -26,7 +26,7 @@ function showResult(product){
   document.getElementById("productIcon").textContent=product.icon||"🎁";
   document.getElementById("productDescription").textContent=product.description||"A surprise selected for you.";
   document.getElementById("productPrice").textContent=Number(product.price).toLocaleString()+"Doller";
-  document.getElementById("payAmount").textContent=Number(product.price).toLocaleString()+"Doller";
+  document.getElementById("payAmount").textContent=Number(product.price).toLocaleString()+"$";
   document.getElementById("resultTitle").textContent="Your mystery is revealed!";
   result.classList.remove("hidden");
   openBtn.classList.add("hidden");

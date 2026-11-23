@@ -1,9 +1,9 @@
 const DEFAULTS=[
-{letter:"A",name:"Notebook",price:100,icon:"📓",description:"A handy notebook for your ideas.",enabled:true,weight:1},
-{letter:"B",name:"Pen Set",price:50,icon:"🖊️",description:"A useful set of everyday pens.",enabled:true,weight:1},
-{letter:"C",name:"Water Bottle",price:150,icon:"🥤",description:"A reusable bottle for daily use.",enabled:true,weight:1},
-{letter:"D",name:"Book",price:200,icon:"📚",description:"A surprise book selected by the shop.",enabled:true,weight:1},
-{letter:"E",name:"Pencil Case",price:80,icon:"✏️",description:"A practical pencil case.",enabled:true,weight:1}
+{letter:"A",name:"Learning Tools",price:3,icon:"🖊️📓",description:"Study Essential",enabled:true,weight:1},
+{letter:"B",name:"Accessories",price:4.5,icon:"💍👓",description:"Stylish extras",enabled:true,weight:1},
+{letter:"C",name:"Ultensils",price:4,icon:"🍽🥄🍴",description:"Kitchen essentials",enabled:true,weight:1},
+{letter:"D",name:"Phone case",price:200,icon:"📱",description:"Phone Cover",enabled:true,weight:1},
+{letter:"E",name:"Candies",price:80,icon:"🍫🍬🍟",description:"Sweet treets",enabled:true,weight:1}
 ];
 const KEY="masterybox_products_v2";
 let products=load();

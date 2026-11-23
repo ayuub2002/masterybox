@@ -16,7 +16,7 @@ function render(){
  const card=document.createElement("div");card.className="item";
  card.innerHTML=`<h3>Letter ${p.letter}</h3>
  <label>Product name</label><input data-i="${i}" data-k="name" value="${escapeHtml(p.name)}">
- <label>Price (EGP)</label><input type="number" min="0" data-i="${i}" data-k="price" value="${Number(p.price)}">
+ <label>Price $(</label><input type="number" min="0" data-i="${i}" data-k="price" value="${Number(p.price)}">
  <label>Icon (emoji)</label><input data-i="${i}" data-k="icon" value="${escapeHtml(p.icon||"🎁")}">
  <label>Description</label><input data-i="${i}" data-k="description" value="${escapeHtml(p.description||"")}">
  <label>Selection weight</label><input type="number" min="0" step="1" data-i="${i}" data-k="weight" value="${Number(p.weight)||0}">

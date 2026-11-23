@@ -3,8 +3,8 @@ const DEFAULT_PRODUCTS = [
   {letter:"A",name:"Learning Tools",price:3,icon:"🖊️📓",description:"Study Essential",enabled:true,weight:1},
   {letter:"B",name:"Accessories",price:4.5,icon:"💍👓",description:"Stylish extras",enabled:true,weight:1},
   {letter:"C",name:"Ultensils",price:4,icon:"🍽🥄🍴",description:"Kitchen essentials",enabled:true,weight:1},
-  {letter:"D",name:"Phone case",price:200,icon:"📱",description:"Phone Cover",enabled:true,weight:1},
-  {letter:"E",name:"Candies",price:80,icon:"🍫🍬🍟",description:"Sweet treets",enabled:true,weight:1}
+  {letter:"D",name:"Phone case",price:3.5,icon:"📱",description:"Phone Cover",enabled:true,weight:1},
+  {letter:"E",name:"Candies",price:2.5,icon:"🍫🍬🍟",description:"Sweet treets",enabled:true,weight:1}
 ];
 const PRODUCTS_KEY="masterybox_products_v2";
 const RESULT_KEY="masterybox_customer_result_v2";
